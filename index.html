@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Synaesthesia.js</title>
+		<style>
+			
+			body {
+				font-family: sans-serif;
+			}
+			
+			#colours div {
+				width: 200px;
+				height: 200px;
+				float: left;
+				color: #fff;
+				text-align: center;
+				line-height: 200px;
+				font-size: 18px;
+				margin: 0 10px 10px 0;
+				border-radius: 10px;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		
+		<h1>Synaesthesia.js</h1>
+
+		<p>Enter your word(s): <input type="text" id="words" maxlength="32" autofocus></p>
+		
+		<div id="colours"></div>
+
+		<script src="synaesthesia.js"></script>
+		
+		<script>
+			Synaesthesia.init('words', 'colours');
+		</script>
+
+	</body>
+
+</html>
